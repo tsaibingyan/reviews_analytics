@@ -13,3 +13,11 @@ for d in data:
 	sum_len += len(d)
 avg_len = sum_len / 1000000 
 print('留言的平均長度是 %.2f ' %avg_len)
+
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有 %d 筆留言長度小於100' %len(new))
+print(new[0])
